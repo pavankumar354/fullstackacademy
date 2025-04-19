@@ -17,20 +17,24 @@
   width: 15px;
 }
 .logo img {
-  height: 30px;
-  margin-right: 10px;
+  height: 40px;
+  margin-right: 20px;
 }
 .nav-buttons button {
   margin-left: 1rem;
-  padding: 0.5rem 1rem;
+  padding: 10px;
   border: none;
   cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  width: 110px;
+  height: 40px;
 }
 
 .sign-up {
   background: rgb(240, 238, 238);
   border: 1px solid #2b2929;
-  font-weight: 400;
+  
   border-radius: 5px;
 }
 
@@ -38,25 +42,34 @@
   background: red;
   color: white;
   border-radius: 5px;
-  padding: 5px;
+  margin-left: 1rem;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  width: 110px;
+  height: 40px;
+  
 }
 
 .nav-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
   background: #fff;
   border-bottom: 1px solid #ccc;
   gap: 2rem;
-  height: 40px;
+  height: 50px;
   align-items: center;
 }
 .nav-links{
   display: flex;
-  gap: 25px;
-  font-size: 12px;
+  gap: 35px;
+  font-size: 16px;
   font-weight: 600;
+  color: #474141;
 }
 .nav-item {
   position: relative;
@@ -95,13 +108,17 @@
   background-color: gray;
   padding: 10px;
   margin: 0px;
+  
+}
+.but button{
+
 }
 
 .submenu-content{
   padding: 20px;
 }
 .submenu-content h4 {
-  font-size: 0.5rem;
+  font-size: 0.9rem;
   color: #ccc;
   margin-bottom: 0.1rem;
 }
