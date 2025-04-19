@@ -33,7 +33,7 @@
 
   .right-section {
     flex: 1;
-    max-width: 250px;
+    
     background: white;
     padding: 1.8rem;
     border-radius: 8px;
@@ -159,5 +159,15 @@ form button {
     .brands img {
       width: 70px;
     }
+    .right-section {
+      flex: 1;
+      
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      max-height: 250px;
+      max-width: 300px;
+    }
+   
   }
   
