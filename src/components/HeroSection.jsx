@@ -49,7 +49,7 @@ function Landing() {
       <div className="right-section">
         <div className="info-box">
           <h2>Ready to take your next step? Get more info.</h2>
-          <form>
+          <form className="form1">
             <label>
               Inquiring for:
               <input type="radio" name="inquire" /> Myself

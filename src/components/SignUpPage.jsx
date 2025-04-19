@@ -18,7 +18,7 @@ const SignUpPage = () => {
       <div className="signup-right">
         <div className="form-box">
           <h2>{isLogin ? 'Login to your account' : 'Get starter course today for free'}</h2>
-          <form>
+          <form className="form2">
             {!isLogin && (
               <>
                 <div className="row">
