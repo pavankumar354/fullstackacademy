@@ -80,4 +80,15 @@
   .badges-row img {
     height: 100px;
   }
+  @media (max-width: 480px) {
+    .badges-row{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .badges-row img{
+      height: 95px;
+      width: 150px;
+    }
+  }
   
