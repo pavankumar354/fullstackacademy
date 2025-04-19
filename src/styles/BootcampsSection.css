@@ -1,0 +1,130 @@
+
+  .bootcamp-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 30px 20px;
+  }
+  
+  
+  .section-title {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    max-width: 500px;
+  }
+  
+  .section-title1 {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    max-width: 500px;
+  }
+  
+  .bootcamp-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* exactly two columns */
+    gap: 30px;
+    justify-content: center;
+  }
+  .bootcamp-card:nth-child(5):nth-last-child(1):nth-of-type(odd) {
+    grid-column: span 2;
+    justify-self: center;
+    width: 50%;
+  }
+  
+  .bootcamp-card {
+    border: 1px solid #e6e6e6;
+    max-width: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .bootcamp-img {
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .bootcamp-card:hover .bootcamp-img {
+    transform: scale(1.05); 
+  }
+
+  .category-label {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: black;
+    color: white;
+    padding: 3px 10px;
+    font-size: 12px;
+    border-radius: 20px;
+    opacity: 0.85;
+  }
+  
+  .bootcamp-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  .bootcamp-content h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    
+  }
+  
+  .tag-container {
+    margin-bottom: 15px;
+  }
+  
+  .tag {
+    border: 1px solid black;
+    padding: 5px 12px;
+    border-radius: 25px;
+    font-size: 12px;
+    margin: 0 5px;
+  }
+  
+  .bootcamp-button {
+    background-color: #f5f5f5;
+    color: #504a4a;
+    padding: 10px 20px;
+    border: none;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s ease;
+  }
+  
+  .bootcamp-button:hover {
+    background-color: #dcdcdc;
+  }
+  
+
+  @media (max-width: 768px) {
+    .bootcamp-grid {
+      grid-template-columns: 1fr; /* One column on smaller screens */
+    }
+  
+    /* Fix special 5th card spanning on mobile */
+    .bootcamp-card:nth-child(5):nth-last-child(1):nth-of-type(odd) {
+      grid-column: auto;
+      width: 100%;
+    }
+  }
+  
+  /* Optional: Mobile screens */
+  @media (max-width: 480px) {
+    .bootcamp-grid {
+      gap: 20px; /* Slightly smaller gap on very small screens */
+    }
+  }
