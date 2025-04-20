@@ -13,6 +13,9 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const navigate = useNavigate();
 
+  const user = JSON.parse(localStorage.getItem("user"));
+
+
   useEffect(() => {
     if (isMobileMenuOpen) {
       document.body.style.overflow = 'hidden'; // prevent scroll
@@ -31,6 +34,12 @@ const Navbar = () => {
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const handleLogout = () => {
+    localStorage.removeItem("user");  // Remove user data from localStorage
+    alert("Logged out successfully");
+    navigate("/");  // Redirect to the home page
   };
 
   return (
@@ -59,8 +68,15 @@ const Navbar = () => {
           </div>
 
           <div className="nav-buttons">
-          <button className="sign-up" onClick={() => navigate('/signup')}>Sign Up</button>
-
+          {user ? (
+              <button className="sign-up" onClick={handleLogout}>
+                Logout
+              </button>
+            ) : (
+              <button className="sign-up" onClick={() => navigate('/signup')}>
+                Sign Up
+              </button>
+            )}
             <button className="apply">Apply</button>
           </div>
 
@@ -86,7 +102,15 @@ const Navbar = () => {
               </div>
             ))}
             <div className="mobile-actions">
-              <button className="sign-up" onClick={() => navigate('/signup')}>Sign Up</button>
+            {user ? (
+                <button className="sign-up" onClick={handleLogout}>
+                  Logout
+                </button>
+              ) : (
+                <button className="sign-up" onClick={() => navigate('/signup')}>
+                  Sign Up
+                </button>
+              )}
               <button className="apply">Apply</button>
             </div>
           </div>
