@@ -17,7 +17,7 @@ function Landing() {
     e.preventDefault();
 
     try {
-      await axios.post("http://localhost:8000/saveLandingForm", {
+      await axios.post("https://fsa-backend-m95b.onrender.com/saveLandingForm", {
         inquireFor,
         subject,
       });

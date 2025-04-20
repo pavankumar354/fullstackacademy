@@ -29,7 +29,7 @@ const SignUpPage = () => {
         if (isLogin) {
           // ✅ LOGIN
           try {
-            const response = await axios.post("http://localhost:8000/loginUser", {
+            const response = await axios.post("https://fsa-backend-m95b.onrender.com/loginUser", {
               email,
               password,
             }, {
@@ -57,7 +57,7 @@ const SignUpPage = () => {
         }
          else {
           // ✅ SIGNUP
-          const response = await axios.post("http://localhost:8000/CreateUsers", {
+          const response = await axios.post("https://fsa-backend-m95b.onrender.com/CreateUsers", {
             firstName,
             lastName,
             zip,
