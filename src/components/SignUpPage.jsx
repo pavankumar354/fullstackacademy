@@ -67,7 +67,7 @@ const SignUpPage = () => {
           }, {
             withCredentials: true // ✅ Ensures session cookie is sent
           });
-
+          localStorage.setItem("user", JSON.stringify(response.data.user));
           toast.success(response.data.message || "Signup successful");
           alert("Signup Successful")
           // Clear all fields
@@ -77,6 +77,7 @@ const SignUpPage = () => {
           setEmail("");
           setPhone("");
           setPassword("");
+          navigate("/dashboard");
 
           // ✅ Replace alert with toast
           toast.success("Signup Successful");
