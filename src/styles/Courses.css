@@ -1,0 +1,225 @@
+.coursepage-courses-page {
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .coursepage-courses-banner {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    overflow: hidden;
+  }
+  
+  .coursepage-courses-banner::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  
+  .coursepage-courses-banner h1 {
+    font-size: 3rem;
+    z-index: 1;
+    position: relative;
+    text-shadow: 2px 2px 8px #000;
+    text-align: center;
+  }
+  
+  .coursepage-courses-section {
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  .coursepage-courses-search-bar {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto 30px;
+    flex-direction: row;
+  }
+  
+  .coursepage-courses-search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #1e92a4;
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+  }
+  
+  .coursepage-courses-search-bar button {
+    background-color: #1e92a4;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+  }
+  
+  .coursepage-card-grid {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+  
+  .coursepage-course-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 350px;
+    max-width: 350px;
+    min-height: 400px; 
+    padding: 16px;
+  }
+  
+  .coursepage-course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .coursepage-course-image-container {
+    position: relative;
+    height: 200px; 
+  }
+  
+  .coursepage-course-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 10px;
+  }
+  
+  .coursepage-course-rating {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #fff;
+    color: #ff9900;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .coursepage-course-details {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .coursepage-course-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin: 10px 0;
+    line-height: 1.4;
+    display: -webkit-box;
+   
+    overflow: hidden;
+  }
+  .coursepage-btn{
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px 10px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #1e92a4;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    align-self:center;
+    border: none;
+  }
+  
+  .coursepage-course-meta {
+    font-size: 0.85rem;
+    color: #666;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .coursepage-course-meta span {
+    border: 1px solid #e5e9ea;
+    padding: 5px;
+    border-radius: 15px;
+  }
+  
+  .icon {
+    color: #1e92a4;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  
+  .coursepage-course-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .coursepage-instructor {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .coursepage-instructor-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+
+  @media (max-width: 768px) {
+    .coursepage-courses-banner h1 {
+      font-size: 2rem;
+    }
+  
+    .coursepage-courses-search-bar {
+      max-width: 100%;
+    }
+  
+    .coursepage-card-grid {
+      gap: 10px;
+    }
+  
+    .coursepage-course-card {
+      max-width: 100%;
+    }
+  
+    .coursepage-course-title {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .coursepage-courses-banner {
+      height: 200px;
+    }
+  
+    .coursepage-courses-banner h1 {
+      font-size: 1.5rem;
+    }
+  
+    .coursepage-course-meta {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }

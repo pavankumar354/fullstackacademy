@@ -1,0 +1,239 @@
+.coursedetails1 {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+}
+
+.coursedetails1-header {
+  text-align: center;
+  padding: 40px 20px 10px;
+}
+
+.coursedetails1-header h1 {
+  
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.coursedetails1-meta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  font-size: 20px;
+  color: #666;
+}
+
+.coursedetails1-meta .stars {
+  color: #ffa500;
+}
+
+.coursedetails1-meta .instructor {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.coursedetails1-meta .instructor img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}
+
+.coursedetails1-main {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.coursedetails1-left {
+  flex: 1 1 650px;
+}
+
+.coursedetails1-right {
+  flex: 1 1 300px;
+  position: sticky;
+  top: 100px;
+  align-self: flex-start;
+  height: fit-content;
+}
+
+.coursedetails1-main-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.coursedetails1-left section {
+  margin-bottom: 30px;
+}
+
+.coursedetails1-left h2 {
+  margin-top: 40px;
+    margin-bottom
+
+: 24px;
+    font-size: clamp(1.5rem, 1.1522rem + 1.7391vw, 2.5rem);
+    line-height: 1.3;
+}
+.coursedetails1-left p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.coursedetails1-left ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+/* ---------- UPDATED RIGHT-SIDE CONTAINER TO MATCH FIGMA ---------- */
+
+.coursedetails1-price-card {
+  background-color: #f2eaff;
+  padding: 40px 32px;
+  border-radius: 24px;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.coursedetails1-price-card h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.coursedetails1-price-card h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.coursedetails1-price-card hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 20px 0;
+}
+
+.coursedetails1-feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.125rem;
+}
+
+.coursedetails1-feature-list li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.coursedetails1-feature-list li i {
+  font-size: 1.25rem;
+  color: #845ef7;
+  min-width: 24px;
+}
+
+.coursedetails1-book-button {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 16px 0;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 40px;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.coursedetails1-book-button:hover {
+  background-color: #222;
+}
+
+/* ---------- CTA BOX & FOOTER (No change) ---------- */
+
+.coursedetails1-cta-box {
+  margin: 60px auto 40px;
+  padding: 40px 20px;
+  background-color: #845ef7;
+  text-align: center;
+  color: #fff;
+  border-radius: 16px;
+  max-width: 1200px;
+}
+
+.coursedetails1-cta-box h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.coursedetails1-cta-button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 12px 28px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.coursedetails1-cta-button:hover {
+  background-color: orangered;
+  color: #fff;
+}
+
+.coursedetails1-footer {
+  background-color: #f9f9f9;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-around;
+  padding: 40px 20px;
+  font-size: 0.95rem;
+}
+
+.coursedetails1-footer h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.coursedetails1-footer h4 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.coursedetails1-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.coursedetails1-footer li {
+  margin-bottom: 8px;
+  color: #666;
+}
+
+.coursedetails1-footer-column {
+  flex: 1 1 200px;
+  min-width: 200px;
+}

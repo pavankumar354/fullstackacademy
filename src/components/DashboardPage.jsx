@@ -1,4 +1,4 @@
-// DashboardPage.js
+
 import React from "react";
 import "../styles/DashboardPage.css";
 import BootcampsSection from "./BootcampsSection";

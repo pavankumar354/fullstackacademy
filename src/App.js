@@ -9,6 +9,8 @@ import DashboardPage from "./components/DashboardPage"
 import ProtectedRoute from './components/ProtectedRoute';
 import TopBanner from "./components/TopBanner"; 
 import './App.css';
+import Courses from './components/Courses';
+import CourseDetails from './components/CourseDetails1';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/signup" element={<SignUpPage />} />
+        <Route path="/courses" element={<Courses/>}/>
+        <Route path="/courses/:courseId" element={<CourseDetails />} />
         <Route 
           path="/dashboard" 
           element={

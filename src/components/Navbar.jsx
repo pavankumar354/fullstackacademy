@@ -1,4 +1,3 @@
-// componients/Navbar.jsx
 import React, { useState, useEffect } from 'react';
 import "../styles/Navbar.css";
 import logo1 from "../images/fullstack-academy-logo-full-color-rgb.jpg.jpeg";
@@ -18,7 +17,7 @@ const Navbar = () => {
 
   useEffect(() => {
     if (isMobileMenuOpen) {
-      document.body.style.overflow = 'hidden'; // prevent scroll
+      document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = 'unset';
     }
@@ -37,9 +36,9 @@ const Navbar = () => {
   };
 
   const handleLogout = () => {
-    localStorage.removeItem("user");  // Remove user data from localStorage
+    localStorage.removeItem("user");  
     alert("Logged out successfully");
-    navigate("/");  // Redirect to the home page
+    navigate("/");  
   };
 
   return (
@@ -77,7 +76,7 @@ const Navbar = () => {
                 Sign Up
               </button>
             )}
-            <button className="apply">Apply</button>
+            <button className="apply" onClick={() => navigate('/courses')}>Courses</button>
           </div>
 
           <div className="hamburger" onClick={toggleMobileMenu}>
